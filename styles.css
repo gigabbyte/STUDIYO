@@ -1,0 +1,19 @@
+#phoneContainer {
+    width: 390px;
+    height: 844px;
+    border: solid;
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: black;
+    margin: 0 auto;
+}
+
+.bottomNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    width: 3rem;
+    height: 3rem;
+}
