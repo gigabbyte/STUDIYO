@@ -11,9 +11,19 @@
 .bottomNav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 800px;
+    background-color:darkslategrey;
+    width: 390px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 1rem;
 }
 
 .item1, .item2, .item3, .item4, .item5 {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
 }
