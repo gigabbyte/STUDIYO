@@ -35,7 +35,8 @@ h2 {
     width: 14.8125rem;
     padding: 0.125rem;
     align-items: center!important;
-    border-radius: 0.5rem!important;   
+    border-radius: 0.5rem!important; 
+    justify-content: center!important;  
 }
 
 .segPicker {
@@ -50,35 +51,43 @@ h2 {
 
 
 .infoCard {
- 
+   padding-top: 1.87rem;
+   padding-left: 1.5rem;
+
     background-color: #C2C2C2;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
 }
 
-
+.textGroup1 {
+    text-align: start;
+}
 .time {
-    width: 0.95rem;
-    height: 0.93413rem;
+    height: 1rem;
     float: left;
+    padding-right: .5rem;
 
 }
 
 .timeEst {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; 
     gap: 0.25rem;
+
 }
+
 .skillLevel {
     display: flex;
     align-items: flex-start;
     gap: 0.25rem;
     
+    
 }
 .level {
-    width: 0.95rem;
-    height: 0.93413rem;
+    height: 1rem;
     float: left;
+    padding-right: .5rem;
+
 }
 
 .start {
@@ -103,12 +112,12 @@ button {
 }
 
 .bottomNav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:darkslategrey;
-    margin-top: 1px;
-    padding: 1rem;
+    padding: 1rem 0rem;
     position: fixed;
     bottom: 0;
 }
