@@ -1,5 +1,6 @@
 html {
     font-family: 'Manrope', sans-serif;
+  
 }
 
 body {
@@ -14,53 +15,91 @@ h2 {
     font-size: 1.5rem;
 }
 
-/* topNav styling START */
-.topNav {
-    justify-content: center;
-}
 
-/* this row is used to align back button and logo */
-.row {
-    display: flex;
-    align-items: center;
-   
-}
+
 
 .backButton {
-    padding-left: 1rem;
+    padding: 0.125rem;
+    padding-right: 4.75rem;
 }
 
 .logo {
-    justify-content: center;
-    padding-left: 5.13rem;
+    
 }
+
 
 /* topNav styling END */
 
-.bodyContent {
-    display: flex-column;
-    align-items: center;
-    justify-items: center
+.picker {
+    background-color: #E0E0E2!important;
+    width: 14.8125rem;
+    padding: 0.125rem;
+    align-items: center!important;
+    border-radius: 0.5rem!important;   
 }
 
+.segPicker {
+   position: relative;
+   left: 4.5rem;
+}
+
+.imgPlaceholder {
+    width: 100%;
+}
+
+
+
 .infoCard {
-    justify-content: center;
+ 
     background-color: #C2C2C2;
-    height: 6rem;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
 }
 
-.cardContent {
-    display: flex;
+
+.time {
+    width: 0.95rem;
+    height: 0.93413rem;
+    float: left;
+
 }
 
-.textContent {
-    padding: 0rem;
+.timeEst {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+.skillLevel {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.25rem;
+    
+}
+.level {
+    width: 0.95rem;
+    height: 0.93413rem;
+    float: left;
+}
+
+.start {
+    width: 7.5rem;
+    height: 3.1875rem;
+    justify-content: flex-end;
+    border-radius: 3.125rem;
+    background: #FFF;
+    border: none;
+    float: right;
+    
+}
+
+button {
+    font-size: 1.5rem;
 }
 
 .saveBanner {
-    justify-self: end;
+    width: 2.5rem;
+    float: right;
+    
 }
 
 .bottomNav {

@@ -15,22 +15,98 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <div>
-            <div class="topNav">
-                <div><img src="./images/top.svg"></div>
-                <div class="row">
-                    <div class="backButton"><img src="./images/backButton.svg">
-                    </div>
-                    <div class="logo"><img src="./images/Studiyo.svg">
+<body>
+<div class="container-fluid content">
+    
+    <!-- Row 1 (Top Nav)-->  
+    <div class="row">
+                <img src="./images/top.svg">
+    </div>
+    <!-- Row 2 (back and logo)-->
+    <div class="row">
+        <div class="col-sm-2">
+            <img class="backButton" src="./images/backButton.svg">
+            <img class="logo" src="./images/Studiyo.svg">
+        </div>
+    </div>
+
+    <!-- Row 3 (Segmented Picker)-->
+    <div class="segPicker row">
+        <ul class="picker nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-white);">
+            <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-.5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Project</button>
+            </li>
+            <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Comments</button>
+            </li>
+        </ul>
+    </div>
+   <!-- Row 4 (img placeholder)-->
+   <div class="row">
+        <img class="imgPlaceholder" src="./images/imgPlaceholder.svg">
+   </div>
+   <!-- Row 5 (infoCard)-->
+   <div class="row infoCard">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-1">
+                <h1>Solid Granny Square</h1>
+            </div>
+            <div class="col-sm-1 offset-sm-1">
+                <img class="saveBanner" src="./images/saveBanner.svg">
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <h2>@jesschin4thewin</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="row timeEst">
+                    <img class="time" src="./images/time.svg">
+                    Time Estimate
+                </div>
+                <div class="row skillLevel">
+                    <div>
+                        <img class="level" src="./images/level.svg">
+                        Easy
                     </div>
                 </div>
             </div>
 
+            <div class="col-sm-4">
+                <button class="start">Start</button>
+            </div>
+ 
+            
+
+            
+        </div>
+            
+   </div>
+   <!-- Row 6 (bottom Nav)-->
+   <div class="row">
+    <div class="bottomNav">
+        <div class="item1"><i class=" fi-rr-home"></i></div>
+        <div class="item2"><i class="fi-rr-bookmark"></i></div>
+        <div class="item3"><i class="fi-rr-square-plus"></i></div>
+        <div class="item4"><i class="fi-rr-bell"></i></div>
+        <div class="item5"><i class="fi fi-rr-user"></i></div>
+    </div>
+   </div>
+</div>
+    
+
+            
+  
+     </div>
+
+
+        <div>
+           
+<!--
             <div class="bodyContent">
-                <div>
-                    <img src="./images/imgPlaceholder.svg">
-                </div>
+              
                 <div class="infoCard">
 
                     <div class="cardContent">
@@ -46,13 +122,7 @@
             </div>
 
 
-            <div class="bottomNav">
-                <div class="item1"><i class=" fi-rr-home"></i></div>
-                <div class="item2"><i class="fi-rr-bookmark"></i></div>
-                <div class="item3"><i class="fi-rr-square-plus"></i></div>
-                <div class="item4"><i class="fi-rr-bell"></i></div>
-                <div class="item5"><i class="fi fi-rr-user"></i></div>
-            </div>
+            
         </div>
         <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
