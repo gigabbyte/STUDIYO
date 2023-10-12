@@ -45,22 +45,28 @@ h2 {
 }
 
 .imgPlaceholder {
-    width: 100%;
+   justify-content: center!important;
+   width: 100%!important;
 }
 
 
 
 .infoCard {
-   padding-top: 1.87rem;
-   padding-left: 1.5rem;
-
+    padding-top: 1.87rem;
+    padding-left: 1.5rem;
     background-color: #C2C2C2;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
+   
 }
 
 .textGroup1 {
     text-align: start;
+   
+}
+
+.textline2 {
+    float: top;
 }
 .time {
     height: 1rem;
@@ -128,4 +134,8 @@ button {
     text-align: center;
     font-size: 1.5rem;
     color: white;
+}
+
+.row {
+    
 }
