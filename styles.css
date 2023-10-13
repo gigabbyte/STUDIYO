@@ -1,6 +1,5 @@
 html {
     font-family: 'Manrope', sans-serif;
-  
 }
 
 body {
@@ -8,127 +7,85 @@ body {
 }
 
 h1 {
-    font-size: 1.29rem;
+    font-size: 1.5rem;
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
+#phoneContainer {
+    width: 390px;
+    height: 844px;
+    border: solid;
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: black;
+    margin: 0 auto;
+    padding-bottom: 1.2rem;
+    display: flexbox;
+}
 
+/* topNav styling START */
+.topNav {
+    justify-content: center;
+}
 
+/* this row is used to align back button and logo */
+.row {
+    display: flex;
+    align-items: center;
+   
+}
 
 .backButton {
-    padding: 0.125rem;
-    padding-right: 4.75rem;
+    padding-left: 1rem;
 }
 
 .logo {
-    
+    justify-content: center;
+    padding-left: 5.13rem;
 }
-
 
 /* topNav styling END */
 
-.picker {
-    background-color: #E0E0E2!important;
-    width: 14.8125rem;
-    padding: 0.125rem;
-    align-items: center!important;
-    border-radius: 0.5rem!important; 
-    justify-content: center!important;  
+.bodyContent {
+    display: flex-column;
+    align-items: center;
+    justify-items: center
 }
-
-.segPicker {
-   position: relative;
-   left: 4.5rem;
-}
-
-.imgPlaceholder {
-   justify-content: center!important;
-   width: 100%!important;
-}
-
-
 
 .infoCard {
-    padding-top: 1.87rem;
-    padding-bottom: 1.87rem;
-    padding-left: 1.5rem;
-    background-color: #white;
+    justify-content: center;
+    background-color: #C2C2C2;
+    height: 6rem;
+    width: 22.375rem;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
-    height: fill;
-   
 }
 
-.textGroup1 {
-    text-align: baseline;
-    align-items:center;
-   
-}
-
-
-.time {
-    height: 1rem;
-    float: left;
-    padding-right: .5rem;
-
-}
-
-.timeEst {
+.cardContent {
     display: flex;
-    align-items: flex-start; 
-    gap: 0.25rem;
-
 }
 
-.skillLevel {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.25rem;
-    
-    
-}
-.level {
-    height: 1rem;
-    float: left;
-    padding-right: .5rem;
-
-}
-
-.start {
-    width: 7.5rem;
-    height: 3.1875rem;
-    justify-content: flex-end;
-    border-radius: 3.125rem;
-    background: #FFF;
-    border: none;
-    float: right;
-    
-}
-
-.btn-primary {
-    font-size: 1.5rem;
-    background-color: #073D3D;
-
+.textContent {
+    padding: 0rem;
 }
 
 .saveBanner {
-    width: 2.5rem;
-    float: right;
-    
+    justify-self: end;
 }
 
 .bottomNav {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:darkslategrey;
-    padding: 1rem 0rem;
-    position: fixed;
-    bottom: 0;
+    margin-top: 2px;
+    width: auto;
+    border-bottom-left-radius: 46px;
+    border-bottom-right-radius: 46px;
+    padding: 1rem;
 }
 
 .item1, .item2, .item3, .item4, .item5 {
@@ -137,8 +94,4 @@ h2 {
     text-align: center;
     font-size: 1.5rem;
     color: white;
-}
-
-.row {
-    
 }
