@@ -1,59 +1,89 @@
 /* EMILYBRANCH STYLING START */
 
+
 html {
     font-family: 'Manrope', sans-serif;
-  
-}
-
-body {
+  }
+ 
+ 
+ body {
     font-family: 'Manrope', sans-serif;
-}
-
-h1 {
+    background-color: #F3F3EE;
+    height: 100vh;
+ }
+ 
+ 
+ h1 {
     font-size: 1.29rem;
-}
-
-h2 {
+ }
+ 
+ 
+ h2 {
     font-size: 1rem;
-}
-
-
-
-
-.backButton {
-    padding: 0.125rem;
-    padding-right: 4.75rem;
-}
-
-.logo {
-    
-}
-
-
-/* topNav styling END */
-
-.picker {
+ }
+ 
+ 
+ .closeButton {
+    position: absolute;
+    left: 16px;
+    top: 47px;
+    z-index: 999;
+ }
+ 
+ 
+ .topNav {
+    width: 100%;
+ }
+ 
+ 
+ .statusBar {
+    width: 100%;
+    text-align: center;
+ }
+ 
+ 
+ .statusBar img {
+    width: 100%;
+ }
+ 
+ 
+ .logo {
+   
+ }
+ 
+ 
+ 
+ 
+ /* topNav styling END */
+ 
+ 
+ .picker {
     background-color: #E0E0E2!important;
     width: 14.8125rem;
     padding: 0.125rem;
     align-items: center!important;
-    border-radius: 0.5rem!important; 
-    justify-content: center!important;  
-}
-
-.segPicker {
+    border-radius: 0.5rem!important;
+    justify-content: center!important; 
+ }
+ 
+ 
+ .segPicker {
    position: relative;
    left: 4.5rem;
-}
-
-.imgPlaceholder {
+ }
+ 
+ 
+ .imgPlaceholder {
    justify-content: center!important;
    width: 100%!important;
-}
-
-
-
-.infoCard {
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .infoCard {
     padding-top: 1.87rem;
     padding-bottom: 1.87rem;
     padding-left: 1.5rem;
@@ -61,45 +91,54 @@ h2 {
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
     height: fill;
-   
-}
-
-.textGroup1 {
+  
+ }
+ 
+ 
+ .textGroup1 {
     text-align: baseline;
     align-items:center;
-   
-}
-
-
-.time {
+  
+ }
+ 
+ 
+ 
+ 
+ .time {
     height: 1rem;
     float: left;
     padding-right: .5rem;
-
-}
-
-.timeEst {
-    display: flex;
-    align-items: flex-start; 
-    gap: 0.25rem;
-
-}
-
-.skillLevel {
+ 
+ 
+ }
+ 
+ 
+ .timeEst {
     display: flex;
     align-items: flex-start;
     gap: 0.25rem;
-    
-    
-}
-.level {
+ 
+ 
+ }
+ 
+ 
+ .skillLevel {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.25rem;
+   
+   
+ }
+ .level {
     height: 1rem;
     float: left;
     padding-right: .5rem;
-
-}
-
-.start {
+ 
+ 
+ }
+ 
+ 
+ .start {
     width: 7.5rem;
     height: 3.1875rem;
     justify-content: flex-end;
@@ -107,106 +146,84 @@ h2 {
     background: #FFF;
     border: none;
     float: right;
-    
-}
-
-.btn-primary {
+   
+ }
+ 
+ 
+ .btn-primary {
     font-size: 1.5rem;
     background-color: #073D3D;
-
-}
-
-.saveBanner {
+ }
+ 
+ 
+ .btn-primary:hover {
+    background-color:#073D3D;
+ }
+ 
+ 
+ .btn-primary:active {
+    background-color: #073D3D !important;
+ }
+ 
+ 
+ .saveBanner {
     width: 2.5rem;
     float: right;
-    
-}
-
-.bottomNav {
+   
+ }
+ 
+ 
+ .bottomNav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color:darkslategrey;
-    padding: 1rem 0rem;
+    background-color: #073D3D;
+    padding: 1rem;
     position: fixed;
     bottom: 0;
-}
-
-.item1, .item2, .item3, .item4, .item5 {
+ }
+ 
+ 
+ .item1, .item2, .item3, .item4, .item5 {
     width: 2rem;
     height: 2rem;
     text-align: center;
     font-size: 1.5rem;
     color: white;
-}
-
-.row {
-    
-}
-
-/* EMILYBRANCH STYLING END */
-
-/* PROJECT MODE STYLE START */
-.alert {
-    background: #073D3D;
-    color: #F3F3EE;
-    top: 0;
-    border-radius: 15px;
+ }
+ 
+ 
+ .row {
+   
+ }
+ 
+ 
+ /* EMILYBRANCH STYLING END */
+ 
+ 
+ /* PROJECT MODE STYLE START */
+ .pause {
     position: absolute;
-    width: 100%;
-    margin-top: 50px;
+    background-color: red;
+    left: 45%;
+    top: 100px;
     z-index: 999;
-    opacity: 0;
-    pointer-events: none;
- }
-
- .alert.showAlert {
-    opacity: 1;
-    pointer-events: auto;
- }
-
- .alert.show {
-    animation: dropdown 1s ease forwards;
- }
-@keyframes dropdown {
-    0%{
-        transform: translateY(0%);
-    }
-    100%{
-        transform: translateY(10%);
-    }
-}
-
-.alert.hide {
-    animation: hideDropdown 1s ease forwards;
-}
-@keyframes hideDropdown {
-    0%{
-        transform: translateY(10%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-}
-
- .alert i {
-    padding: 0.5rem;
- }
-
- .topNav .logo {
     display: none;
  }
  
  
+ .topNav .logo {
+    display: none;
+ }
  .topNav .projectName {
     text-align: center;
     position: absolute;
     left: 0;
     background-color: #F3F3EE;
     z-index: -1;
+    height: 500px;
  }
- 
  .icons {
     position: absolute;
     bottom: 550px;
@@ -220,25 +237,30 @@ h2 {
     z-index: 9999;
     gap: 10px;
  }
-
+ 
+ 
  .icons button {
     border-radius: 150px;
-    background-color: #;
     border: none;
     text-align: center;
     width: 4rem;
     height: 4rem;
  }
-
+ 
+ 
+ #carousel {
+    height: 100vh;
+ }
+ 
  
  .carousel-indicators {
     top: 0;
  }
- 
-.carousel-indicators button {
+ .carousel-indicators button {
     background-color: #073D3D !important;
-}
-
+ }
+ 
+ 
  .carousel-caption {
     top: 0rem;
     z-index: 1;
@@ -249,8 +271,6 @@ h2 {
     padding: 1.5rem;
     color: #073D3D;
  }
- 
- 
  .c-item {
     height: 844px;
  }
@@ -258,31 +278,26 @@ h2 {
     object-fit: cover;
     height: 100%;
  }
- 
- 
  .carousel-control-prev-icon {
     display: none;
  }
- 
- 
  .carousel-control-next-icon {
     display: none;
  }
- 
- 
  .carousel-controls {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     position: absolute;
     width: 100%;
-    bottom: 1px;
+    bottom: 7%;
     padding: 1rem;
  }
- 
- 
  .next-button {
     padding: 0.8rem;
     border-radius: 50px;
+    height: 50px;
+    width: 50px;
     border: none;
     background-color: #073D3D;
     margin: 0.5rem;
@@ -291,24 +306,27 @@ h2 {
  }
  
  
- .next-button i {
-    position: relative;
-    top: 3px;
-    font-size: 1.5rem;
+ .carousel-controls i {
+    margin: 0 auto;
+    background-color: red;
  }
  
  
  .prev-button {
     padding: 0.8rem;
     border-radius: 50px;
+    height: 50px;
+    width: 50px;
     border: none;
-    background-color: #F3F3EE;
+    background-color: #073D3D;
     margin: 0.5rem;
-    color: #073D3D;
-    font-size: 1.5rem; 
+    color: #F3F3EE;
+    font-size: 1.5rem;
  }
- 
- 
- 
- 
+ .cardContext {
+    display: block;
+    background-color: red;
+    top: 100px;
+ }
  /* PROJECT MODE STYLE END */
+ 
