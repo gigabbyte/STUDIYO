@@ -7,8 +7,6 @@ html {
 
 body {
     font-family: 'Manrope', sans-serif;
-    background-color: #F3F3EE;
-    height: 100vh;
 }
 
 h1 {
@@ -19,24 +17,12 @@ h2 {
     font-size: 1rem;
 }
 
-.closeButton {
-    position: absolute;
-    left: 16px;
-    top: 47px;
-    z-index: 999;
-}
 
-.topNav {
-    width: 100%;
-}
 
-.statusBar {
-    width: 100%;
-    text-align: center;
-}
 
-.statusBar img {
-    width: 100%;
+.backButton {
+    padding: 0.125rem;
+    padding-right: 4.75rem;
 }
 
 .logo {
@@ -127,14 +113,7 @@ h2 {
 .btn-primary {
     font-size: 1.5rem;
     background-color: #073D3D;
-}
 
-.btn-primary:hover {
-    background-color:#073D3D;
-}
-
-.btn-primary:active {
-    background-color: #073D3D !important;
 }
 
 .saveBanner {
@@ -146,10 +125,10 @@ h2 {
 .bottomNav {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #073D3D;
-    padding: 1rem;
+    background-color:darkslategrey;
+    padding: 1rem 0rem;
     position: fixed;
     bottom: 0;
 }
@@ -169,13 +148,50 @@ h2 {
 /* EMILYBRANCH STYLING END */
 
 /* PROJECT MODE STYLE START */
- .pause {
+.alert {
+    background: #073D3D;
+    color: #F3F3EE;
+    top: 0;
+    border-radius: 15px;
     position: absolute;
-    background-color: red;
-    left: 45%;
-    top: 100px;
+    width: 100%;
+    margin-top: 50px;
     z-index: 999;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+ }
+
+ .alert.showAlert {
+    opacity: 1;
+    pointer-events: auto;
+ }
+
+ .alert.show {
+    animation: dropdown 1s ease forwards;
+ }
+@keyframes dropdown {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
+}
+
+.alert.hide {
+    animation: hideDropdown 1s ease forwards;
+}
+@keyframes hideDropdown {
+    0%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+ .alert i {
+    padding: 0.5rem;
  }
 
  .topNav .logo {
@@ -189,7 +205,6 @@ h2 {
     left: 0;
     background-color: #F3F3EE;
     z-index: -1;
-    height: 500px;
  }
  
  .icons {
@@ -208,14 +223,11 @@ h2 {
 
  .icons button {
     border-radius: 150px;
+    background-color: #;
     border: none;
     text-align: center;
     width: 4rem;
     height: 4rem;
- }
-
- #carousel {
-    height: 100vh;
  }
 
  
@@ -260,11 +272,10 @@ h2 {
  
  .carousel-controls {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     position: absolute;
     width: 100%;
-    bottom: 7%;
+    bottom: 1px;
     padding: 1rem;
  }
  
@@ -272,37 +283,32 @@ h2 {
  .next-button {
     padding: 0.8rem;
     border-radius: 50px;
-    height: 50px;
-    width: 50px;
     border: none;
     background-color: #073D3D;
     margin: 0.5rem;
     color: #F3F3EE;
     font-size: 1.5rem;
  }
-
- .carousel-controls i {
-    margin: 0 auto;
-    background-color: red;
+ 
+ 
+ .next-button i {
+    position: relative;
+    top: 3px;
+    font-size: 1.5rem;
  }
-
+ 
+ 
  .prev-button {
     padding: 0.8rem;
     border-radius: 50px;
-    height: 50px;
-    width: 50px;
     border: none;
-    background-color: #073D3D;
+    background-color: #F3F3EE;
     margin: 0.5rem;
-    color: #F3F3EE;
+    color: #073D3D;
     font-size: 1.5rem; 
  }
  
- .cardContext {
-    display: block;
-    background-color: red;
-    top: 100px;
- }
+ 
  
  
  /* PROJECT MODE STYLE END */
