@@ -110,8 +110,8 @@ h2 {
 }
 .level {
     height: 1rem;
-    float: left;
     padding-right: .5rem;
+    padding-left: .25rem;
 
 }
 
@@ -134,8 +134,40 @@ h2 {
 
 .saveBanner {
     width: 2.5rem;
-    float: right;
+  
     
+}
+
+.startArrow {
+    padding-left: .4rem;
+}
+
+.iconList {
+   padding-top: 1rem;
+}
+
+.itemA, .itemB, .itemC {
+    
+  
+}
+
+.itemA {
+    float: left;
+    padding-right: .5rem;
+}
+
+.itemB {
+    padding-left: 2.2rem;
+    padding-right: .5rem;
+  
+    
+}
+.itemC {
+    float:right;
+
+  
+    
+
 }
 
 .bottomNav {
