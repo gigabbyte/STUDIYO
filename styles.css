@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-size: 1.29rem;
+    font-size: 1.25rem;
 }
 
 h2 {
@@ -50,29 +50,35 @@ h2 {
    
 }
 
+
 .segPicker {
-   position: absolute;
-   top: 50%;
+   display: flex;
+   justify-content: center;
+    position: absolute;
+   top: 7.2rem;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: red;
-
+   width: 14.48rem;
+   line-height: .75rem;
 }
+
 
 .bg-primary {
     background-color: #F3F3EE!important;
 }
+
+/* now the real image */
 .imgPlaceholder {
    justify-content: center!important;
    width: 100%!important;
 }
 
 
-
+/* info card styling START */
 .infoCard {
     padding-top: 1.87rem;
     padding-bottom: 1.87rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     background-color: white;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
@@ -83,7 +89,18 @@ h2 {
 .textGroup1 {
     text-align: baseline;
     align-items:center;
+    flex-wrap: nowrap!important;
+    height: 2.0625rem;
+    
    
+}
+
+.cardTitle {
+    flex-wrap: nowrap!important;
+    overflow: hidden!important;
+
+
+    
 }
 
 
@@ -91,6 +108,7 @@ h2 {
     height: 1rem;
     float: left;
     padding-right: .5rem;
+    align-self: auto;
 
 }
 
@@ -110,40 +128,55 @@ h2 {
 }
 .level {
     height: 1rem;
-    padding-right: .5rem;
+    padding-right: .25rem;
     padding-left: .25rem;
+    align-self: auto;
 
 }
 
+/* start button */
 .start {
-    width: 7.5rem;
-    height: 3.1875rem;
-    justify-content: flex-end;
+    width: 5.18rem;
+    height: 2.0625rem;
+   
     border-radius: 3.125rem;
-    background: #FFF;
+
     border: none;
-    float: right;
-    
+    float: right!important;
+    font-size: 1rem!important;
+    text-align: center!important;
+    color: white;  
 }
 
 .btn-primary {
     font-size: 1.5rem;
     background-color: #073D3D;
-
-}
-
-.saveBanner {
-    width: 2.5rem;
-  
-    
 }
 
 .startArrow {
     padding-left: .4rem;
+    height: 0.59894rem;
+    width: 0.8rem;   
 }
+
+/* container of both the save icon and start button */
+.startSave {
+    flex-wrap: nowrap;
+}
+
+/* save icon */
+.saveBanner {
+    height: 1.84581rem;
+    width: 1.50863rem;  
+}
+
+
+/* desctiption/materials/instructions icons */
 
 .iconList {
    padding-top: 1rem;
+   justify-content: space-between!important;
+  
 }
 
 .itemA, .itemB, .itemC {
@@ -151,23 +184,21 @@ h2 {
   
 }
 
+/* description icon */
 .itemA {
-    float: left;
-    padding-right: .5rem;
+    
+ 
 }
+/* materials icon */
 
+   
+/*instructions icon */ 
 .itemB {
-    padding-left: 2.2rem;
-    padding-right: .5rem;
-  
-    
+
 }
+
 .itemC {
-    float:right;
-
-  
     
-
 }
 
 .bottomNav {
@@ -180,9 +211,11 @@ h2 {
     position: fixed;
     bottom: 0;
 }
+/* info card styling END */
 
+
+/* bottom nav icons */
 .item1, .item2, .item3, .item4, .item5 {
-   background-color: lightpink;
     width: 2rem;
     height: 2rem;
     text-align: center;
@@ -195,7 +228,13 @@ h2 {
 
 
 
+
 /* EMILYBRANCH STYLING END */
+
+
+
+
+
 
 /* PROJECT MODE STYLE START */
 .alert {
