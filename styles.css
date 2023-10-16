@@ -125,28 +125,21 @@ html {
     background-color: white;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    height: fill;
     position: absolute;
+    height: fill;
     width: 100%;
-  
  }
- 
  
  .textGroup1 {
     text-align: baseline;
     align-items:center;
     flex-wrap: nowrap!important;
     height: 2.0625rem;
-    
-   
 }
 
 .cardTitle {
     flex-wrap: nowrap!important;
     overflow: hidden!important;
-
-
-    
 }
 
 
@@ -312,51 +305,6 @@ html {
 
 
 /* PROJECT MODE STYLE START */
-.alert {
-    background: #073D3D;
-    color: #F3F3EE;
-    top: 0;
-    border-radius: 15px;
-    position: absolute;
-    width: 100%;
-    margin-top: 50px;
-    z-index: 999;
-    opacity: 0;
-    pointer-events: none;
- }
-
- .alert.showAlert {
-    opacity: 1;
-    pointer-events: auto;
- }
-
- .alert.show {
-    animation: dropdown 1s ease forwards;
- }
-@keyframes dropdown {
-    0%{
-        transform: translateY(0%);
-    }
-    100%{
-        transform: translateY(10%);
-    }
-}
-
-.alert.hide {
-    animation: hideDropdown 1s ease forwards;
-}
-@keyframes hideDropdown {
-    0%{
-        transform: translateY(10%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
-}
-
- .alert i {
-    padding: 0.5rem;
- }
  
  .topNav .logo {
     display: none;
