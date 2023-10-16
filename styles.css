@@ -203,6 +203,29 @@ html {
  
  /* GABBYBRANCH STYLING START */
  /* PROJECT MODE STYLE START */
+.handsFreeMode {
+   position: absolute;
+   z-index: 999;
+   text-align: center;
+   left: 50%;
+   top: 50%;
+   margin: -9rem;
+}
+
+.handsFreeButtons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between !important;
+   /* padding: 1rem 0 0 0 !important; */
+} 
+
+.handsFreeButtons button {
+   font-size: 14px;
+   width: 100%;
+   background-color: inherit;
+   border: none;
+}
+
  .pause {
     position: absolute;
     background-color: red;
@@ -211,7 +234,6 @@ html {
     z-index: 999;
     display: none;
  }
- 
  
  .topNav .logo {
     display: none;
