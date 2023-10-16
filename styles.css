@@ -201,8 +201,31 @@ html {
  
  /* EMILYBRANCH STYLING END */
  
- 
+ /* GABBYBRANCH STYLING START */
  /* PROJECT MODE STYLE START */
+.handsFreeMode {
+   position: absolute;
+   z-index: 999;
+   text-align: center;
+   left: 50%;
+   top: 50%;
+   margin: -9rem;
+}
+
+.handsFreeButtons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between !important;
+   /* padding: 1rem 0 0 0 !important; */
+} 
+
+.handsFreeButtons button {
+   font-size: 14px;
+   width: 100%;
+   background-color: inherit;
+   border: none;
+}
+
  .pause {
     position: absolute;
     background-color: red;
@@ -211,7 +234,6 @@ html {
     z-index: 999;
     display: none;
  }
- 
  
  .topNav .logo {
     display: none;
@@ -246,55 +268,99 @@ html {
     width: 4rem;
     height: 4rem;
  }
+
+ /* CARD NOTCH STYLE START */
+ .cardContext {
+    display: block;
+    background-color: #F3F3EE;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    margin-bottom: 0 auto;
+    position: fixed;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0px -4px 10px 5px rgba(0, 0, 0, 0.5);
+ }
+
+ .notch {
+    height: 10%;
+    width: 40%;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 100px;
+ }
  
- 
- #carousel {
+ /* CAROUSEL STYLE START */
+ .carousel-inner {
     height: 100vh;
  }
- 
- 
- .carousel-indicators {
-    top: 0;
+
+ .carousel-item {
+    height: 100vh;
  }
+
+ .carousel-indicators {
+    top: 40px;
+    z-index: 999;
+ }
+
  .carousel-indicators button {
     background-color: #073D3D !important;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 100px !important;
+    color: #F3F3EE !important;
+    text-indent: none !important;
+    text-align: center !important;
  }
- 
- 
+
  .carousel-caption {
-    top: 0rem;
+    top: -1rem;
     z-index: 1;
     background-color: #F3F3EE;
-    height: 10%;
+    height: 15%;
     width: 100%;
     left: 0;
     padding: 1.5rem;
     color: #073D3D;
  }
+ 
  .c-item {
-    height: 844px;
+    height: 100vh !important;
  }
+
  .c-img {
     object-fit: cover;
     height: 100%;
  }
+
  .carousel-control-prev-icon {
     display: none;
  }
+
  .carousel-control-next-icon {
     display: none;
  }
+
  .carousel-controls {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
     width: 100%;
-    bottom: 7%;
+    bottom: 15%;
     padding: 1rem;
  }
- .next-button {
-    padding: 0.8rem;
+
+ .carousel-controls button {
+    background-color:rgba(7, 61, 61, 0);
+    border: none;
+ }
+
+ /* .next-button {
+    padding-bottom: 0.8rem;
     border-radius: 50px;
     height: 50px;
     width: 50px;
@@ -309,6 +375,7 @@ html {
  .carousel-controls i {
     margin: 0 auto;
     background-color: red;
+    padding: none;
  }
  
  
@@ -322,11 +389,7 @@ html {
     margin: 0.5rem;
     color: #F3F3EE;
     font-size: 1.5rem;
- }
- .cardContext {
-    display: block;
-    background-color: red;
-    top: 100px;
- }
+ } */
+ 
  /* PROJECT MODE STYLE END */
  
