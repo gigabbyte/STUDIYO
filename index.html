@@ -14,25 +14,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     </head>
-
 <body>
 <div class="container-fluid content">
     
-    <!-- Row 1 (Top Nav)-->  
+    <!-- Row 1 (top nav)-->  
     <div class="row">
                 <img src="./images/top.svg">
     </div>
     <!-- Row 2 (back and logo)-->
     <div class="row">
-        <div class="col-sm-2">
+        <div class="col-sm-2 mx-auto">
             <img class="backButton" src="./images/backButton.svg">
             <img class="logo" src="./images/Studiyo.svg">
         </div>
     </div>
 
-    <!-- Row 3 (Segmented Picker)-->
-    <div class="segPicker row">
-        <ul class="picker nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(----Sand, #F3F3EE-); --bs-nav-pills-link-active-color: var(--Deep-Green, #073D3D); --bs-nav-pills-link-active-bg: var(--bs-white);">
+    <!-- Row 3 (segmented picker)-->
+    <div class="segPicker row mx-auto">
+        <ul class="picker nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color:#073D3D; --bs-nav-pills-link-active-color:#F3F3EE; --bs-nav-pills-link-active-bg:#073D3D;">
             <li class="nav-item" role="presentation">
           <button class="nav-link active rounded-.5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Project</button>
             </li>
@@ -41,50 +40,59 @@
             </li>
         </ul>
     </div>
-   <!-- Row 4 (img placeholder)-->
+
+   <!-- Row 4 (img)-->
    <div class="row">
-        <img class="imgPlaceholder" src="./images/imgPlaceholder.svg">
+        <img class="imgPlaceholder" src="./images/picture1.png">
    </div>
-   <!-- Row 5 (infoCard)-->
+<!-- Row 5 (infoCard) START-->
    <div class="row infoCard">
         <div class="row textGroup1">
-            <div class="col-8">
-                <h1>Crochet Coaster</h1>
+            <div class="col-7">
+                <div class="cardTitle">
+                    <h1>Crochet Coaster</h1>
+                </div>
             </div>
-            <div class="col-4">
+        
+            <div class="col-5 startSave d-flex align-items-center justify-content-end">
                 <img class="saveBanner" src="./images/saveBanner.svg">
+                <a href="./projectmode.html" id="projectmode">
+                    <button type="button" class="btn btn-primary start">Start<img class="startArrow" src="./images/startarrow.svg"></button>
+                </a>
             </div>
         </div>
     
-
+        <!--subrow: time and difficulty-->
         <div class="row">
-            <div class="col-6">
-                <div class="row timeEst">
-                    <div class="timeGroup">
-                        <img class="time" src="./images/time.svg">
-                        Time Estimate
-                    </div>
-                    
-                </div>
-                <div class="row skillLevel">
+            <div class="col-12">
+                <div class="row">
                     <div>
+                        <img class="time" src="./images/time.svg">
+                        20 min
                         <img class="level" src="./images/level.svg">
                         Easy
                     </div>
                 </div>
-            </div>
-
-            <div class="col-6">
-                <a href="./projectmode.html" id="projectmode"><button type="button" class="btn btn-primary start">Start</button></a>
-            </div>
- 
-            
-
-            
+            </div>  
         </div>
+
+        <!--subrow: circle icons-->
+        <div class="row circleIcons">
+            <div class="col-12">
+                <div class="row">
+                    <div class="iconList">
+                        <img class="itemA" src="./images/description.svg">
+                        <img class="itemB" src="./images/materials.svg">
+                        <img class="itemC" src="./images/instructions.svg">
+                    </div>                    
+                </div>               
+            </div>         
+        </div>           
+    </div>
+    <!-- </div> above is info card END-->
             
    </div>
-   <!-- Row 6 (bottom Nav)-->
+   <!-- Row 6 (bottomnNav)-->
    <div class="row bottomNav">
 
         <div class="item1">
@@ -98,40 +106,16 @@
         </div>
         <div class="item4"><i class="fi-rr-bell"></i>
         </div>
-        <div class="item5"><i class="fi fi-rr-user"></i></div>
-    
-   </div>
-</div>
-    
-
-            
-  
-     </div>
-
-
-        <div>
-           
-<!--
-            <div class="bodyContent">
-              
-                <div class="infoCard">
-
-                    <div class="cardContent">
-                        <div class="textContent">
-                            <h1>Solid Granny Square</h1>
-                            <h2>@jesschin4thewin</h2>
-                        </div>
-                       
-                        <img class="saveBanner" src="./images/saveBanner.svg">
-                    </div>
-                    
-                </div>
-            </div>
-
-
-            
+        <div class="item5"><i class="fi fi-rr-user"></i>
         </div>
-        <!--Javascript-->
+   </div>
+
+</div>
+
+
+
+           
+<!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>

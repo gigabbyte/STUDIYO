@@ -20,6 +20,24 @@ html {
  
  h2 {
     font-size: 1rem;
+}
+
+.content {
+    position: relative;
+}
+
+
+.backButton {
+    padding: 0.125rem;
+    padding-right: 3rem;
+}
+
+
+
+
+/* topNav styling END */
+
+.picker {
  }
  
  
@@ -59,35 +77,52 @@ html {
  
  .picker {
     background-color: #E0E0E2!important;
-    width: 14.8125rem;
-    padding: 0.125rem;
+   
     align-items: center!important;
-    border-radius: 0.5rem!important;
-    justify-content: center!important; 
- }
- 
- 
- .segPicker {
-   position: relative;
-   left: 4.5rem;
- }
- 
- 
- .imgPlaceholder {
+    border-radius: 0.5rem!important; 
+    justify-content: center!important;  
+}
+
+#home-tab2 {
+    padding: 0.375rem 0.46875rem 0.37513rem 0.5rem;
+    width: 6.3125rem;  
+}
+
+#profile-tab2 {
+    padding: 0.375rem 0.46875rem 0.37513rem 0.5rem;
+   
+}
+
+
+.segPicker {
+   display: flex;
+   justify-content: center;
+    position: absolute;
+   top: 7.2rem;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 14.48rem;
+   line-height: .75rem;
+}
+
+
+.bg-primary {
+    background-color: #F3F3EE!important;
+}
+
+/* now the real image */
+.imgPlaceholder {
    justify-content: center!important;
    width: 100%!important;
- }
- 
- 
- 
- 
- 
- 
- .infoCard {
+}
+
+
+/* info card styling START */
+.infoCard {
     padding-top: 1.87rem;
     padding-bottom: 1.87rem;
-    padding-left: 1.5rem;
-    background-color: #white;
+    padding-left: 1rem;
+    background-color: white;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
     height: fill;
@@ -98,22 +133,30 @@ html {
  .textGroup1 {
     text-align: baseline;
     align-items:center;
-  
- }
- 
- 
- 
- 
- .time {
+    flex-wrap: nowrap!important;
+    height: 2.0625rem;
+    
+   
+}
+
+.cardTitle {
+    flex-wrap: nowrap!important;
+    overflow: hidden!important;
+
+
+    
+}
+
+
+.time {
     height: 1rem;
     float: left;
     padding-right: .5rem;
- 
- 
- }
- 
- 
- .timeEst {
+    align-self: auto;
+
+}
+
+.timeEst {
     display: flex;
     align-items: flex-start;
     gap: 0.25rem;
@@ -131,29 +174,40 @@ html {
  }
  .level {
     height: 1rem;
-    float: left;
-    padding-right: .5rem;
- 
- 
- }
- 
- 
- .start {
-    width: 7.5rem;
-    height: 3.1875rem;
-    justify-content: flex-end;
-    border-radius: 3.125rem;
-    background: #FFF;
-    border: none;
-    float: right;
+    padding-right: .25rem;
+    padding-left: .25rem;
+    align-self: auto;
+
+}
+
+/* start button */
+.start {
+    width: 5.18rem;
+    height: 2.0625rem;
    
- }
- 
- 
- .btn-primary {
+    border-radius: 3.125rem;
+
+    border: none;
+    float: right!important;
+    font-size: 1rem!important;
+    text-align: center!important;
+    color: white;  
+}
+
+.btn-primary {
     font-size: 1.5rem;
     background-color: #073D3D;
- }
+}
+
+.startArrow {
+    padding-left: .4rem;
+    height: 0.59894rem;
+    width: 0.8rem;   
+}
+
+/* container of both the save icon and start button */
+.startSave {
+    flex-wrap: nowrap; }
  
  
  .btn-primary:hover {
@@ -166,9 +220,40 @@ html {
  }
  
  
+/* save icon */
  .saveBanner {
-    width: 2.5rem;
-    float: right;
+    height: 1.84581rem;
+    width: 1.50863rem;  
+}
+
+
+/* desctiption/materials/instructions icons */
+
+.iconList {
+   padding-top: 1rem;
+   justify-content: space-between!important;
+  
+}
+
+.itemA, .itemB, .itemC {
+    
+  
+}
+
+/* description icon */
+.itemA {
+    
+ 
+}
+/* materials icon */
+
+   
+/*instructions icon */ 
+.itemB {
+
+}
+
+.itemC {
    
  }
  
@@ -178,61 +263,81 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #073D3D;
-    padding: 1rem;
+    background-color:darkslategrey;
+    padding: .5rem;
     position: fixed;
     bottom: 0;
- }
- 
- 
- .item1, .item2, .item3, .item4, .item5 {
+}
+/* info card styling END */
+
+
+/* bottom nav icons */
+.item1, .item2, .item3, .item4, .item5 {
     width: 2rem;
     height: 2rem;
     text-align: center;
     font-size: 1.5rem;
     color: white;
- }
- 
- 
- .row {
-   
- }
- 
- 
- /* EMILYBRANCH STYLING END */
- 
- /* GABBYBRANCH STYLING START */
- /* PROJECT MODE STYLE START */
-.handsFreeMode {
-   position: absolute;
-   z-index: 999;
-   text-align: center;
-   left: 50%;
-   top: 50%;
-   margin: -9rem;
+    margin: 0 auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 
-.handsFreeButtons {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between !important;
-   /* padding: 1rem 0 0 0 !important; */
-} 
 
-.handsFreeButtons button {
-   font-size: 14px;
-   width: 100%;
-   background-color: inherit;
-   border: none;
-}
 
- .pause {
+
+/* EMILYBRANCH STYLING END */
+
+
+
+
+
+
+/* PROJECT MODE STYLE START */
+.alert {
+    background: #073D3D;
+    color: #F3F3EE;
+    top: 0;
+    border-radius: 15px;
     position: absolute;
-    background-color: red;
-    left: 45%;
-    top: 100px;
+    width: 100%;
+    margin-top: 50px;
     z-index: 999;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+ }
+
+ .alert.showAlert {
+    opacity: 1;
+    pointer-events: auto;
+ }
+
+ .alert.show {
+    animation: dropdown 1s ease forwards;
+ }
+@keyframes dropdown {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
+}
+
+.alert.hide {
+    animation: hideDropdown 1s ease forwards;
+}
+@keyframes hideDropdown {
+    0%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+ .alert i {
+    padding: 0.5rem;
  }
  
  .topNav .logo {
