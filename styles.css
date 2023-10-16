@@ -33,22 +33,27 @@ html {
 }
 
 
+.logoNav {
+   padding: 1rem;
+   text-align: center;
+}
 
+.logoNav svg {
+   width: 50%;
+   position: absolute;
+   padding: none;
+   left: -20%;
+}
 
 /* topNav styling END */
 
-.picker {
- }
- 
- 
  .closeButton {
     position: absolute;
     left: 16px;
     top: 47px;
     z-index: 999;
  }
- 
- 
+
  .topNav {
     width: 100%;
  }
@@ -64,23 +69,18 @@ html {
     width: 100%;
  }
  
- 
- .logo {
-   
- }
- 
- 
- 
+
  
  /* topNav styling END */
  
  
  .picker {
     background-color: #E0E0E2!important;
-   
     align-items: center!important;
     border-radius: 0.5rem!important; 
     justify-content: center!important;  
+    position: absolute;
+    top: 1rem;
 }
 
 #home-tab2 {
