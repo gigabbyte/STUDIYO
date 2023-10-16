@@ -126,6 +126,8 @@ html {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height: fill;
+    position: absolute;
+    width: 100%;
   
  }
  
@@ -222,7 +224,8 @@ html {
 
 /* container of both the save icon and start button */
 .startSave {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    }
  
  
  .btn-primary:hover {
@@ -274,9 +277,9 @@ html {
  
  
  .bottomNav {
-    width: 100%;
+    width: 105%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color:#073D3D;
     padding: .5rem;
