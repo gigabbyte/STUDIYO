@@ -123,8 +123,8 @@ html {
     padding-bottom: 1.87rem;
     padding-left: 1rem;
     background-color: white;
-    border-top-left-radius: 46px;
-    border-top-right-radius: 46px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     height: fill;
   
  }
@@ -148,7 +148,7 @@ html {
 }
 
 
-.time {
+/* .time {
     height: 1rem;
     float: left;
     padding-right: .5rem;
@@ -169,29 +169,44 @@ html {
     display: flex;
     align-items: flex-start;
     gap: 0.25rem;
-   
-   
  }
  .level {
     height: 1rem;
     padding-right: .25rem;
     padding-left: .25rem;
     align-self: auto;
+} */
 
+.levels {
+   display: flex;
+   justify-content: flex-start;
+   align-items: baseline;
+   font-size: 1rem;
+}
+
+.levels img {
+   width: 1rem;
+   vertical-align: baseline;
+}
+
+.timeAndLevel {
+   display: flex;
+   gap: 1rem;
 }
 
 /* start button */
 .start {
     width: 5.18rem;
     height: 2.0625rem;
-   
     border-radius: 3.125rem;
-
     border: none;
     float: right!important;
     font-size: 1rem!important;
     text-align: center!important;
     color: white;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn-primary {
@@ -202,7 +217,7 @@ html {
 .startArrow {
     padding-left: .4rem;
     height: 0.59894rem;
-    width: 0.8rem;   
+    width: 1rem;
 }
 
 /* container of both the save icon and start button */
@@ -222,14 +237,14 @@ html {
  
 /* save icon */
  .saveBanner {
-    height: 1.84581rem;
-    width: 1.50863rem;  
+    width: 2.5rem; 
 }
 
 
 /* desctiption/materials/instructions icons */
 
 .iconList {
+   display: flex;
    padding-top: 1rem;
    justify-content: space-between!important;
   
@@ -263,7 +278,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:darkslategrey;
+    background-color:#073D3D;
     padding: .5rem;
     position: fixed;
     bottom: 0;
