@@ -47,6 +47,26 @@ html {
 
 /* topNav styling END */
 
+.progressSaved {
+   display: flex;
+   background-color: rgba(7, 61, 61, 0.95);
+   color: #F3F3EE;
+   position: absolute;
+   width: 95%;
+   border-radius: 1rem;
+   top: 1rem;
+   z-index: 999;
+   left: 0;
+   right: 0;
+   margin: auto;
+   height: 4rem;
+   align-items: center;
+}
+
+.progressSavedText {
+   padding: 1rem;
+}
+
  .closeButton {
     position: absolute;
     left: 16px;
@@ -310,13 +330,8 @@ html {
 /* EMILYBRANCH STYLING END */
 
 
-
-
-
-
 /* PROJECT MODE STYLE START */
 
-/* JAVASCRIPT ALERTS STYLE */
 .handsFreeMode {
    position: absolute;
    z-index: 999;
@@ -324,7 +339,9 @@ html {
    left: 50%;
    top: 50%;
    text-align: center;
+   display: block;
 }
+
 
 .handsFreeMode svg {
    padding-bottom: 1rem;
@@ -459,6 +476,7 @@ hr.solid {
     color: #F3F3EE !important;
     text-indent: none !important;
     text-align: center !important;
+    border-radius: 50% !important;
  }
 
  .carousel-caption {
