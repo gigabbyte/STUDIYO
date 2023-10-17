@@ -461,6 +461,18 @@ hr.solid {
  }
  
  /* CAROUSEL STYLE START */
+ .progressLine {
+   width: 65%;
+   background-color:rgba(7, 61, 61, 0.1);
+   display: block;
+   position: absolute;
+   height: 10px;
+   z-index: 2;
+   margin: 0 auto;
+   top: 3.5rem;
+   left: 16%;
+ }
+
  .carousel-inner {
     height: 100vh;
  }
