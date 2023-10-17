@@ -293,10 +293,6 @@ html {
     padding-left: 0rem;
     padding-right: 0rem;
 }
-
-
-
-
 /* EMILYBRANCH STYLING END */
 
 
@@ -305,6 +301,56 @@ html {
 
 
 /* PROJECT MODE STYLE START */
+
+/* JAVASCRIPT ALERTS STYLE */
+.handsFreeMode {
+   position: absolute;
+   z-index: 999;
+   margin: -9rem;
+   left: 50%;
+   top: 50%;
+   text-align: center;
+}
+
+.handsFreeMode svg {
+   padding-bottom: 1rem;
+}
+
+.handsFreeButtons {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   font-size: 0.9rem;
+}
+
+hr.solid {
+   border-top: 1px solid #073D3D;
+}
+
+.handsFreeButtons button {
+   width: 100%;
+   background-color: inherit;
+}
+
+.handsFreeButtons button:first-child {
+   border-left: none;
+   border-right: solid;
+   border-bottom: none;
+   border-top: none;
+}
+
+.handsFreeButtons button:nth-child(2) {
+   border: none;
+}
+
+
+.dismiss button {
+   border: none;
+}
+
+.card-body {
+   border-color: inherit;
+}
  
  .topNav .logo {
     display: none;
@@ -429,38 +475,5 @@ html {
     background-color:rgba(7, 61, 61, 0);
     border: none;
  }
-
- /* .next-button {
-    padding-bottom: 0.8rem;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: #073D3D;
-    margin: 0.5rem;
-    color: #F3F3EE;
-    font-size: 1.5rem;
- }
- 
- 
- .carousel-controls i {
-    margin: 0 auto;
-    background-color: red;
-    padding: none;
- }
- 
- 
- .prev-button {
-    padding: 0.8rem;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: #073D3D;
-    margin: 0.5rem;
-    color: #F3F3EE;
-    font-size: 1.5rem;
- } */
- 
  /* PROJECT MODE STYLE END */
  

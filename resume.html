@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!--Boostrap CSS END-->
+        <link rel="stylesheet" href="/styles.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Outfit:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+<body>
+<div class="container-fluid content">
+    
+    <!-- Row 1 (top nav)-->  
+    <div class="row">
+                <img src="./images/top.svg">
+    </div>
+    <!-- Row 2 (back and logo)-->
+    <div class="logoNav">
+        <!-- <div class="col-sm-2 mx-auto">
+            <img class="backButton" src="./images/backButton.svg">
+            <img class="logo" src="./images/Studiyo.svg">
+        </div> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+            <path d="M10 20L0 10L10 0L11.775 1.775L3.55 10L11.775 18.225L10 20Z" fill="black"/>
+          </svg>
+        <img class="logo" src="./images/Studiyo.svg">
+    </div>
+
+    <!-- Row 3 (segmented picker)-->
+    <div class="segPicker row mx-auto">
+        <ul class="picker nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color:#073D3D; --bs-nav-pills-link-active-color:#F3F3EE; --bs-nav-pills-link-active-bg:#073D3D;">
+            <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-.5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Project</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Comments</button>
+            </li>
+        </ul>
+    </div>
+
+   <!-- Row 4 (img)-->
+   <div class="row">
+        <img class="imgPlaceholder" src="./images/picture1.png">
+   </div>
+<!-- Row 5 (infoCard) START-->
+   <div class="row infoCard">
+    <div class="infoNotch"></div>
+        <div class="row textGroup1">
+            <div class="col-7">
+                <div class="cardTitle">
+                    <h1>Crochet Coaster</h1>
+                </div>
+            </div>
+        
+            <div class="col-5 startSave d-flex align-items-center justify-content-end">
+                <img class="saveBanner" src="./images/saveBanner.svg">
+                <a href="./projectmode.html" id="projectmode">
+                    <button type="button" class="btn btn-primary start">Resume<img class="startArrow" src="./images/startarrow.svg"></button>
+                </a>
+            </div>
+        </div>
+    
+        <!--subrow: time and difficulty-->
+        <div class="row">
+            <div class="col-12 levels">
+                <div class="row">
+                    <div class="timeAndLevel">
+                        <div><img class="time" src="./images/time.svg">
+                            20 min</div>
+                        <div><img class="level" src="./images/level.svg">
+                            Easy</div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <!--subrow: circle icons-->
+        <div class="row circleIcons">
+            <div class="col-12">
+                <div class="row">
+                    <div class="iconList">
+                        <img class="itemA" src="./images/description.svg">
+                        <img class="itemB" src="./images/materials.svg">
+                        <img class="itemC" src="./images/instructions.svg">
+                    </div>                    
+                </div>               
+            </div>         
+        </div>           
+    </div>
+    <!-- </div> above is info card END-->
+            
+   </div>
+   <!-- Row 6 (bottomnNav)-->
+   <div class="row bottomNav">
+
+        <div class="item1">
+            <i class=" fi-rr-home"></i>
+        </div>
+        <div class="item2">
+            <i class="fi-rr-bookmark"></i>
+        </div>
+        <div class="item3">
+            <i class="fi-rr-square-plus"></i>
+        </div>
+        <div class="item4"><i class="fi-rr-bell"></i>
+        </div>
+        <div class="item5"><i class="fi fi-rr-user"></i>
+        </div>
+   </div>
+
+</div>
+
+
+
+           
+<!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>
