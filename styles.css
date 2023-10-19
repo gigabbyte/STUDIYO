@@ -117,14 +117,24 @@ html {
 .segPicker {
    display: flex;
    justify-content: center;
-    position: absolute;
-   top: 7.2rem;
+   position: absolute;
+   top: 6.26rem;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 14.48rem;
    line-height: .75rem;
 }
 
+.username {
+   color: var(--Sand, #F3F3EE);
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   top: 32.5rem;
+   padding-left: 1rem;
+   font-weight: 600;
+   
+}
 
 .bg-primary {
     background-color: #F3F3EE!important;
@@ -160,6 +170,7 @@ html {
 .cardTitle {
     flex-wrap: nowrap!important;
     overflow: hidden!important;
+   
 }
 
 
